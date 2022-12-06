@@ -3,6 +3,7 @@ import ExpenseItem from "./ExpenseItem";
 import Card from "../UI/Card";
 
 const Expenses = (props) => {
+  console.log(props.items);
   const rows = props.items.map((item) => (
     <ExpenseItem title={item.title} amount={item.amount} date={item.date} />
   ));
