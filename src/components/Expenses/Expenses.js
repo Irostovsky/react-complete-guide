@@ -8,7 +8,7 @@ const Expenses = (props) => {
   const [filteredYear, setFilteredYear] = useState("2020");
 
   const filteredExpenses = props.items.filter(
-    (expense) => expense.date.getFullYear().toString() == filteredYear
+    (expense) => expense.date.getFullYear().toString() === filteredYear
   );
   const rows = filteredExpenses.map((item) => (
     <ExpenseItem
