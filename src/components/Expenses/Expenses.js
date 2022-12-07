@@ -7,9 +7,14 @@ import { useState } from "react";
 const Expenses = (props) => {
   const [filteredYear, setFilteredYear] = useState("2020");
 
+  const filterChangeHandler = (selectedYear) => {
+    setFilteredYear(selectedYear);
+  };
+
   const filteredExpenses = props.items.filter(
     (expense) => expense.date.getFullYear().toString() === filteredYear
   );
+
   const rows = filteredExpenses.map((item) => (
     <ExpenseItem
       key={item.id}
@@ -19,9 +24,10 @@ const Expenses = (props) => {
     />
   ));
 
-  const filterChangeHandler = (selectedYear) => {
-    setFilteredYear(selectedYear);
-  };
+  let expensesContent = <p>No expenses found.</p>;
+  if (filteredExpenses.length > 0) {
+    expensesContent = rows;
+  }
 
   return (
     <Card className="expenses">
@@ -29,7 +35,7 @@ const Expenses = (props) => {
         onChangeFilter={filterChangeHandler}
         selected={filteredYear}
       />
-      {rows}
+      {expensesContent}
     </Card>
   );
 };
