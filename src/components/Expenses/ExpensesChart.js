@@ -2,7 +2,7 @@ import Chart from "../Chart/Chart";
 
 const monthAmount = (month, items) => {
   const itemsForMonth = items.filter(
-    (item) => item.date.toLocaleString("en-US", { month: "short" }) == month
+    (item) => item.date.toLocaleString("en-US", { month: "short" }) === month
   );
   const amountsForMonth = itemsForMonth.map((item) => item.amount);
   return amountsForMonth.reduce((acc, value) => acc + value, 0);
