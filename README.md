@@ -1,6 +1,6 @@
 # Homepage
 
-https://Irostovsky.github.io/react-expenses-tracker is done based on the github pages, see https://github.com/gitname/react-gh-pages for reference.
+https://Irostovsky.github.io/react-complete-guide is done based on the github pages, see https://github.com/gitname/react-gh-pages for reference.
 
 # Getting Started with Create React App
 
