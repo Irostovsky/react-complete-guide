@@ -13,17 +13,13 @@ const ExpensesChart = (props) => {
   moment.locale("en");
   const months = moment.monthsShort();
 
-  const maxValue = props.items
-    .map((item) => item.amount)
-    .reduce((acc, value) => acc + value, 0);
-
   const chartDataPoints = months.map((month) => {
     return {
       label: month,
       value: monthAmount(month, props.items),
     };
   });
-  return <Chart dataPoints={chartDataPoints} maxValue={maxValue} />;
+  return <Chart dataPoints={chartDataPoints} />;
 };
 
 export default ExpensesChart;
