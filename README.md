@@ -1,5 +1,6 @@
 # Homepage
-https://Irostovsky.github.io/react-complete-guide is done based on the github pages, see https://github.com/gitname/react-gh-pages for reference.
+
+https://Irostovsky.github.io/react-expenses-tracker is done based on the github pages, see https://github.com/gitname/react-gh-pages for reference.
 
 # Getting Started with Create React App
 
@@ -43,8 +44,8 @@ Instead, it will copy all the configuration files and the transitive dependencie
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
 ### `npm run deploy`
-To deploy to the the github pages.
 
+To deploy to the the github pages.
 
 ## Learn More
 
